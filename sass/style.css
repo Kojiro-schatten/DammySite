@@ -367,7 +367,7 @@ h4 {
 @media (max-width: 768px) {
   .hero-txt {
     margin: 0;
-    padding: 257px 20px 41px 20px;
+    padding: 200px 20px 41px 20px;
   }
 }
 
@@ -1341,6 +1341,12 @@ button.swiper-pagination-bullet {
   justify-content: center;
 }
 
+@media (max-width: 768px) {
+  .scroll {
+    display: none;
+  }
+}
+
 .scroll span {
   width: 10px;
   height: 20px;
@@ -1349,6 +1355,12 @@ button.swiper-pagination-bullet {
   background: #BB1B1B;
   margin: -10px;
   animation: scroll 1.3s infinite alternate;
+}
+
+@media (max-width: 768px) {
+  .scroll span {
+    display: none;
+  }
 }
 
 .sum {
