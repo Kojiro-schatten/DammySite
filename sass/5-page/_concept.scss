@@ -1,0 +1,119 @@
+.con {
+    max-width: 1280px;
+    margin-bottom: 150px;
+    width: 100%;
+    margin: 0 auto;
+    @include sp {
+        margin-bottom: 100px;
+    }
+    &-back-box {
+        position: absolute;
+        height: 756px;
+        width: 911px;
+        right: 0px;
+        background-color: #ececec;
+        z-index: -99;
+        @include sp {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &-inner {
+        padding-top: 35px;
+        margin-bottom: 150px;
+    }
+    &-back-pos {
+        background-position: right;
+    }
+    &-philosophy {
+        height: 180px;
+        background: url(../img/svg/ourphylosophy.svg) no-repeat;
+        padding-left: 110px;
+        background-position: 212px;
+        @include sp {
+            padding-left: calc(100% / 10);
+            padding-top: 20px;
+            background-position: 0;
+        }
+        @media screen and (min-width:1281px) {
+            background-position: 50px;
+        }
+    }
+    &-logo {
+        color: $gray;
+        position: initial;
+        padding-top: 20px;
+        font-size: 5.8rem;
+    }
+    
+    &-img {
+        max-width: 1100px;
+        height: auto;
+        position: relative;
+        margin-bottom: 60px;
+        animation: fluffy 4s ease infinite;
+        & img {
+            width:1100px;
+            box-shadow: 30px 30px 30px rgba(0,0,0,0.3);
+        }
+        @include sp {
+            margin-bottom: 0;
+        }
+    }
+    &-flex {
+        display: flex;
+        @include sp {
+            display: block;
+        }
+    }
+    &-txt-box {
+        text-align: left;
+        padding-top: 127px;
+        padding-left: 65px;
+        @include sp {
+            padding-top: 23%;
+            padding-left: calc(100% / 10);
+        }
+    }
+    &-txt-head {
+        font-weight: 100;
+        color: $black;
+        line-height: 6rem;
+        margin-bottom: 24px;
+        &::before {
+            content: '';
+            border-left: 10px solid $bg-red;
+            padding-bottom: 150px;
+        }
+        
+    }
+    &-txt-span1 {
+        padding-left: 33px;
+    }
+    &-txt-span2 {
+        padding-left: 44px;
+    }
+    &-txt {
+        padding-left: 47px;
+        padding-right: 100px;
+        font-size: 1.4rem;
+        line-height: 3.5rem;
+    }
+    &-career-txt {
+        max-width: 980px;
+        width: 100%;
+        padding-top: 120px;
+        padding-left: 100px;
+        padding-right: 100px;
+        > p {
+            line-height: 3.2rem;
+            text-align:justify;
+            font-size: 1.6rem;
+        }
+        @include sp {
+            padding-left: calc(100% / 10);
+            padding-right: calc(100% / 10);
+            padding-top: calc(100% / 10);
+        }
+    }
+}

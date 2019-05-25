@@ -1,0 +1,73 @@
+.hero {
+    width: 100%;
+    padding-left: calc(100% / 12.8);
+    margin-bottom: 228px;
+    @include sp {
+        padding-left: 0;
+        margin-bottom: 100px;
+    }
+    &-inner {
+        background: url(../img/top/back-first.png) no-repeat center center/cover;
+        height: 100vh;
+        padding: 0;
+        margin: 0 auto;
+        position: relative;
+    }
+    &-overlay {
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.4);
+    }
+    &-txt {
+        padding: 311px 409px 33px 100px;
+        @include sp {
+            margin: 0;
+            padding: 257px 20px 41px 20px;
+        }
+        @media screen and (min-width:1201px) {
+            padding: 211px 409px 33px 100px;
+        }
+    }
+    &-p {
+        color: $white;
+        font-size: 2.4rem;
+        padding: 0 474px 186px 100px;
+        @include sp {
+            padding: 0 40px 0px 50px;
+        }
+    }
+    &-info {
+        display: flex;
+        justify-content: flex-end;
+        position: absolute;
+        top: 89.3vh;
+        right: 0;
+        @include sp {
+            top: 90vh;
+            width:100%;
+            right: initial;
+        }
+    }
+    &-time {
+        padding:28px 12px;
+        background-color: $black;
+        color: $white;
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+    &-contentBox {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        width: 532px;
+        background-color: $white;
+        @include sp {
+            width: 100%;
+        }
+    }
+    &-content {
+        padding: 12px;
+        color: $white-gray;
+        font-size: 1.4rem;
+        
+    }
+}

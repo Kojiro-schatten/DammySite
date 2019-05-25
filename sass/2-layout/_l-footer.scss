@@ -1,0 +1,30 @@
+.footer {
+    height: 374px;
+    width: 100%;
+    background: #222222;
+}
+.contact-box {
+    height: 279px;
+    background: $bg-red;
+}
+.contact-inner {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-txt {
+    color: $gray;
+    font-size: 2.4rem;
+    background-color: #FFFFFF;
+    width: calc(100% - 42%);
+    border: 4px solid $black;
+    text-align: center;
+    padding: 50px 0;
+    transition: all .2s ease-in-out;
+    &:hover {
+        color: $white;
+        background-color: $gray;
+        transition: all .2s ease-in-out;
+    }
+}

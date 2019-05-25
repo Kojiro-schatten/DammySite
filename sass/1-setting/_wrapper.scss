@@ -1,0 +1,24 @@
+.wrapper:before, .wrapper:after, .wrapper-second:before, .wrapper-second:after, .wrapper-center:before {
+    content: '';
+    position: fixed;
+    z-index: -9999;
+    top: 100px;
+    width: 1px;
+    min-height: 100vh;
+    background-color: #cccccc;
+}
+.wrapper:before {
+    left: calc(100% / 12.8);
+}
+.wrapper-second:before {
+    left: calc(100% / 3.478);
+}
+.wrapper-center:before {
+    left: 50%;
+}
+.wrapper-second:after {
+    right: calc(100% / 3.575);
+}
+.wrapper:after {
+    right: calc(100% / 12.8);
+}

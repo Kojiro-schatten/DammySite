@@ -1,0 +1,117 @@
+
+.sum {
+    width: 100%;
+    position: relative;
+    padding-left: calc(100% / 12.8);
+    &-inner {
+        background: url(../img/top/back-second.png) no-repeat;
+        background-position: right;
+        min-height: 705px;
+        @include sp {
+            min-height: 450px;
+            background: none;
+        }
+    }
+    &-logo {
+        padding-top: 110px;
+        margin-bottom: 20px;
+        font-size: 3.5rem;
+    }
+    &-txt-box {
+        max-width: 616px;
+        line-height: 4.2rem;
+    }
+    &-txt-main {
+        position: relative;
+        font-size: 2.39rem;
+        color: $gray;
+        z-index: 1;
+        @include sp {
+            font-size: 3vw;
+            letter-spacing: 0;
+            color: $white-gray;
+            background-color: $white;
+            padding: 30px;
+        }
+    }
+    &-img-box {
+        position: absolute;
+        height: 489px;
+        width: 652px;
+        top: 170px;
+        right: 0;
+        animation: fluffy 4s ease infinite;
+        box-shadow: 30px 30px 30px rgba(0,0,0,0.3);
+        @include sp {
+            width: 100%;
+            background-position: initial;
+            box-shadow: none;
+            top: 75px;
+        }
+    }
+    // ここからpoint-box
+    &-point-box {
+        max-width: 1280px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 306px;
+        @include sp {
+            padding-top: 18%;
+        }
+    }
+    // 左赤ボックス
+    &-left-box {
+        position: relative;
+        width: 100px!important;
+        height: 313px;
+    }
+    &-width {
+        width: calc(33% - (200px/3));
+    }
+    &-left-txt {
+        padding-left: .3rem;
+    }
+    &-center-txt {
+        position: relative;
+        top: 102px;
+        padding-left: 2rem;
+    }
+    &-right-txt {
+        position: relative;
+        top: 204px;
+        padding-left: 3.3rem;
+    }
+    &-point {
+        font-size: 2.4rem;
+        color: $white-gray;
+        margin-bottom: 2.6rem;
+    }
+    &-txt {
+        font-size: 1.6rem;
+        color: $gray;
+        line-height: 4.2rem;
+        text-align: justify;
+    }
+    // 右赤ボックス
+    &-right-box {
+        position: relative;
+        width: 100px;
+        height: 313px;
+    }
+}
+@include sp {
+    .sum {
+        &-left-box, &-right-box {
+            display: none;
+        }
+        &-width {
+            width: calc(100% - (10px/2));
+        }
+        &-left-txt, &-center-txt, &-right-txt {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+    }
+}

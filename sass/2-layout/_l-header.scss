@@ -1,0 +1,55 @@
+.l-head {
+    position: fixed;
+    width: 100%;
+    background-color: $bg-white;
+    z-index: 100;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+    &-txt {
+        padding-top: 25px;
+        padding-left: 31px;
+        float: left;
+        @include sp {
+            padding-top: 11px;
+            padding-left: 0;
+            height: 10vh;
+            text-align: center;
+            float: none;
+        }
+    }
+    &-h1 {
+        color: $black-h1;
+    }
+    &-ul {
+        display: flex;
+        @include sp {
+            display: none;
+        }
+    }
+    &-nav {
+        float: right;
+    }
+    &-li {
+        padding-top: 34px;
+        padding-bottom: 28px;
+        &:not(:last-child) {
+            margin-right: 47px;
+        }
+        &:last-child {
+            background-color: $bg-wine;
+            padding:35px 25px;
+        }
+    }
+    &-a {
+        font-size: 1.8rem;
+        text-decoration: none;
+        transition: all .3s ease-out;
+        &:hover {
+            opacity: 0.5;
+            text-decoration: none;
+            transition: all .5s ease-out;
+        }
+    }
+    &-con {
+        color: $white;
+    }
+}

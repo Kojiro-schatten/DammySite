@@ -1,0 +1,66 @@
+.mem {
+    @include sp {
+        padding-top: 150px;
+    }
+    &-back {
+        position: relative;
+        z-index: -10;
+        width: calc(100% - 30%);
+        height: 478px;
+        top: 721px;
+        left: -120px;
+        display: flex;
+        background-color: $bg-red;
+        @include sp {
+            width: 100%;
+            top: 521px;
+        }
+    }
+    &-top-img img{
+        height: 626px;
+    }
+    &-txt-box {
+        position: relative;
+        top: -200px;
+        padding-left: 100px;
+        @include sp {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 0;
+        }
+    }
+    &-txt {
+        color: $white;
+        font-size: 5.8rem;
+    }
+    &-second-img {
+        text-align: center;
+        margin-top: -60px;
+        animation: fluffy 3s ease infinite;
+        & img {
+            box-shadow: 30px 30px 30px rgba(0,0,0,0.3);
+        }
+    }
+    &-second-box {
+        padding-top: 10px;
+        margin-bottom: 143px;
+    }
+    &-second-img {
+        margin-bottom: 100px;
+    }
+    &-second-inner {
+        max-width: 786px;
+        width: 100%;
+        margin: 0 auto;
+        & > p {
+            text-align: justify;
+            line-height: 2.8rem;
+            font-size: 1.6rem;
+        }
+        @include sp {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+    }
+}

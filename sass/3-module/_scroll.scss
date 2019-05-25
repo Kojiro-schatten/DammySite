@@ -1,0 +1,21 @@
+.scroll {
+    position: absolute;
+    top: 85.8vh;
+    left: 49px;
+    width: 2px;
+    height: 100px;
+    display: flex;
+    background: #000;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.scroll span {
+    width: 10px;
+    height: 20px;
+    display: block;
+    border: 2px solid #BB1B1B;
+    background: #BB1B1B;
+    margin: -10px;
+    animation: scroll 1.3s infinite alternate;
+}

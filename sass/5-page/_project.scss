@@ -1,0 +1,67 @@
+.pro {
+    padding-left: 100px;
+    margin-bottom: 180px;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    &-back-box {
+        background: url(../img/svg/project.svg) no-repeat;
+        max-width: 1200px;
+        margin-bottom: 180px;
+        @include sp {
+            margin-bottom: 0;
+        }
+    }
+    @include sp {
+        padding-left: calc(100% / 10);
+        margin-bottom: 100px;
+    }
+    &-wine-box {
+        position: relative;
+        z-index: -10;
+        width: calc(100%/2.34);
+        height: 491px;
+        display: flex;
+        background-color: $bg-red;
+        top: 80px;
+        margin-left: 148px;
+        @include sp {
+            width: 91%;
+            transform: translate;
+            top: 0;
+            left: 0;
+            transform: translate(10%);
+            margin-left: 0;
+        }
+    }
+    &-main {
+        margin-top: -185px;
+    }
+    &-flex {
+        display: flex;
+        @include sp {
+            display: block;
+        }
+    }
+    &-logo {
+        max-width: 300px;
+        margin-right: 90px;
+        dd {
+            font-size: 1.6rem;
+            color: $black;
+            line-height: 3rem;
+        }
+        @include sp {
+            margin-right: calc(100% / 10);
+            margin-bottom: calc(100% / 4);
+        }
+        dt {
+            margin-left: -3px;
+            letter-spacing: -.2em;
+            margin-bottom: 24px;
+        }
+    }
+    &-img {
+        margin-top: -45px;
+    }
+}
